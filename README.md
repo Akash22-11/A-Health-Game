@@ -3,7 +3,7 @@ This is a health game foe a lazy user who want discipline in his life but he can
 class AnimeHealthAvatar:
 
 
-# 🧙‍♂️ Python RPG Leveling System
+# 🧙‍♂️  Leveling Up System
 
 A simple RPG-style player progression system built in Python.
 This project simulates how experience points (XP), leveling, and rank progression work in role-playing games.
