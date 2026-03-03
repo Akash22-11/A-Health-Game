@@ -1,3 +1,5 @@
+#Code portion only not the complete one
+
 def calculate_xp_threshold(self):
     """
     Algorithm: As level increases, it becomes harder to level up.
