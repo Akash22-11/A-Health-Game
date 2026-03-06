@@ -49,7 +49,7 @@ When earned XP exceeds the required threshold:
 1. Player levels up
 2. Extra XP carries over
 3. Rank updates automatically
-4. New XP requirement is calculated
+4. New XP requirement is calculated;
 
 ---
 
@@ -64,6 +64,7 @@ When earned XP exceeds the required threshold:
 
 ---
 
+
 ## 📂 Project Structure
 
 ```
@@ -76,7 +77,7 @@ project/
 
 ---
 
-## ▶️ Usage
+## ▶️ Usage;
 
 ### 1. Create a Player
 
@@ -95,7 +96,7 @@ The system automatically:
 
 * Checks level-ups
 * Updates rank
-* Displays progress
+* Displays the progress;
 
 ---
 
@@ -121,7 +122,7 @@ This project demonstrates:
 * Class design and encapsulation
 * Game progression algorithms
 * Loop-based state management
-* Clean function separation
+* Clean function seperation
 
 ---
 
