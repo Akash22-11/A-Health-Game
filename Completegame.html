@@ -11,6 +11,7 @@
 <style>
 :root{--bg:#030712;--sf:#0a0f1e;--bd:rgba(0,255,200,0.15);--ac:#00ffc8;--ac2:#0088ff;--dg:#ff3c6e;--wn:#ffcc00;--tx:#e0f7f4;--mt:rgba(224,247,244,0.4);--gl:0 0 20px rgba(0,255,200,0.3);}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  
 body{background:var(--bg);color:var(--tx);font-family:'Share Tech Mono',monospace;min-height:100vh;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,200,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,200,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0;}
 body::after{content:'';position:fixed;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,136,255,0.07) 0%,transparent 70%);top:-150px;right:-100px;pointer-events:none;z-index:0;}
@@ -81,6 +82,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.9rem,6vw,3.2rem);font-wei
 .mi:focus{border-color:var(--ac);}
 .mbtn{width:100%;background:var(--ac);border:none;color:var(--bg);padding:13px;font-family:'Orbitron',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.3em;cursor:pointer;text-transform:uppercase;transition:filter .2s;}
 .mbtn:hover{filter:brightness(1.15);}
+
 </style>
 </head>
 <body>
@@ -104,6 +106,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.9rem,6vw,3.2rem);font-wei
   </div>
 </div>
 <div class="wrap">
+  
   <h1>VITALIS</h1>
   <div class="tl">// LEVEL UP · Active Protocol</div>
   <div class="pn a1">
@@ -115,6 +118,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.9rem,6vw,3.2rem);font-wei
         <div class="bg" id="bg">LVL 1</div>
       </div>
     </div>
+  
     <div class="xr"><span>XPS</span><span id="xl">0 / 100 XP</span></div>
     <div class="xt"><div class="xf" id="xf" style="width:0%"></div></div>
     <div class="sk">
@@ -127,6 +131,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.9rem,6vw,3.2rem);font-wei
       <div class="sc2"><div class="sv" id="s2">0</div><div class="sb">Streak</div></div>
       <div class="sc2"><div class="sv" id="s3">0</div><div class="sb">Total XP</div></div>
     </div>
+ 
   </div>
   <div class="st">// DAILY ACTIVITIES</div>
   <div class="ag" id="ag"></div>
@@ -134,7 +139,8 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(1.9rem,6vw,3.2rem);font-wei
   <div class="st" style="margin-top:4px;">// SYSTEM LOG</div>
   <div class="lb" id="lb"><div class="lh">ACTIVITY FEED</div></div>
 </div>
-<script>
+
+  <script>
 const RK={1:"NOVICE AGENT",5:"WEEKEND WARRIOR",10:"FITNESS OPERATIVE",20:"HEALTH CHAMPION",30:"WELLNESS LEGEND"};
 const AC=[{n:"Morning Run",i:"🏃",x:50,id:"run"},{n:"Drink Water",i:"💧",x:10,id:"water"},{n:"Meditation",i:"🧘",x:30,id:"meditate"},{n:"Full Workout",i:"💪",x:100,id:"workout"},{n:"Sleep 8hrs",i:"😴",x:40,id:"sleep"},{n:"Eat Healthy",i:"🥗",x:35,id:"eat"}];
 const MD=5,ST=7,AV=["🧬","🏃","⚡","🔥","💎","👑"];
@@ -146,7 +152,7 @@ function init(){
   G.name=n;G.rank=gRank(1);document.getElementById('mo').style.display='none';
   rUI();rActs();log("AGENT "+n.toUpperCase()+" INITIALIZED","xp");log("LOG UP TO "+MD+" ACTIVITIES DAILY","in");
 }
-function doA(a){
+  function doA(a){
   const td=new Date().toDateString();
   if(G.date!==td){G.done=0;G.date=td;G.cd={};document.getElementById('dw').classList.remove('on');rActs();}
   if(G.done>=MD||G.cd[a.id]){document.getElementById('dw').classList.add('on');return;}
