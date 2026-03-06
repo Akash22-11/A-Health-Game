@@ -20,7 +20,7 @@ The goal of this project is to practice **object-oriented programming**, **game 
 * Rank progression system
 * XP carry-over after leveling
 * Visual console progress bar
-* Multiple level-ups handled automatically
+* Multiple level-ups handled automatically.
 
 ---
 
@@ -36,8 +36,8 @@ XP Required = 100 × level^1.5
 
 This creates a smooth progression curve:
 
-* Early levels are fast and rewarding
-* Mid levels require effort
+* Early levels are fast and rewarding.
+* Mid levels require effort.
 * Higher levels feel meaningful and challenging
 
 ---
