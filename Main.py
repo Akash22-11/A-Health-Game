@@ -19,7 +19,7 @@ def gain_xp(self, amount, activity_name):
     self.show_stats()
 
 def level_up(self):
-    self.current_xp -= self.xp_to_next_level                                                                 # Carry over extra XP
+    self.current_xp -= self.xp_to_next_level                                                                # Carry over extra XP
     self.level += 1
     self.calculate_xp_threshold()                                                                            # Recalculate difficulty
     
@@ -32,6 +32,7 @@ def level_up(self):
     print(f"\n✨  HURRY LEVEL UP! You are now Level {self.level} ({self.rank})! ✨\n")
 
 def show_stats(self):
+   
     # Create a visual progress bar
     progress_percent = int((self.current_xp / self.xp_to_next_level) * 10)
     bar = "█" * progress_percent + "-" * (10 - progress_percent)
