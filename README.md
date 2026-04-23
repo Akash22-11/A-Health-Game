@@ -1,55 +1,69 @@
-# A-Health-Game[YEAGREST}
-This is a health game foe a lazy user who want discipline in his life but he can't 
-class AnimeHealthAvatar:
+<!-- HERO -->
 
+<h1 align="center">🧙‍♂️ A HEALTH GAME</h1>
 
-# 🧙‍♂️  Level Up;
+<h3 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=600&lines=Turn+Your+Life+Into+An+RPG;Gain+XP+For+Healthy+Habits;Level+Up+Your+Discipline;Built+With+Python+⚡"/>
+</h3>
 
-A simple RPG-style player progression system built in Python.
-This project simulates how experience points (XP), leveling, and rank progression work in role-playing games.
+<p align="center">
+  <img src="https://img.shields.io/badge/Game-RPG-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Health-System-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Python-Project-blue?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/Status-Learning-orange?style=for-the-badge"/>
+</p>
 
-The goal of this project is to practice **object-oriented programming**, **game logic design**, and **algorithmic thinking** using Python.
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" width="500"/>
+</p>
+
+<p align="center">
+  <b>⚔️ Train your habits like a game character ⚔️</b><br>
+  Stop being lazy. Start gaining XP.
+</p>
+
+---
+
+## 🧠 About The Project
+
+**A Health Game** is a Python-based RPG-style system that turns real-life actions into **experience points (XP)**.
+
+Instead of just tracking habits, you:
+
+* 🏃 Gain XP for actions
+* 🧙 Level up your character
+* 🏆 Unlock ranks
+
+Inspired by RPG mechanics, this system makes **self-discipline feel like a game**.
 
 ---
 
 ## 🚀 Features
 
-* XP gain system based on player activities
-* Automatic level-up mechanism
-* Non-linear difficulty scaling
-* Rank progression system
-* XP carry-over after leveling
-* Visual console progress bar
-* Multiple level-ups handled automatically.
+<div align="center">
+
+| ⚡ System        | 💡 Description          |
+| --------------- | ----------------------- |
+| 🎯 XP Engine    | Gain XP from activities |
+| 🆙 Level System | Auto level-up logic     |
+| 📈 Scaling      | Non-linear XP growth    |
+| 🏆 Rank System  | Titles based on level   |
+| 🔁 XP Carry     | Extra XP preserved      |
+| 📊 Progress Bar | Visual console output   |
+
+</div>
 
 ---
 
-## 🧠 How It Works
+## 🧮 XP Formula
 
-### XP Algorithm
+XP = 100 \cdot level^{1.5}
 
-The XP required for the next level increases as the player grows stronger.
+This ensures:
 
-```
-XP Required = 100 × level^1.5
-```
-
-This creates a smooth progression curve:
-
-* Early levels are fast and rewarding.
-* Mid levels require effort.
-* Higher levels feel meaningful and challenging
-
----
-
-### Level-Up Logic
-
-When earned XP exceeds the required threshold:
-
-1. Player levels up
-2. Extra XP carries over
-3. Rank updates automatically
-4. New XP requirement is calculated;
+* Fast early progress ⚡
+* Balanced mid-game 📊
+* Challenging high levels 🔥
 
 ---
 
@@ -64,46 +78,49 @@ When earned XP exceeds the required threshold:
 
 ---
 
+## 🧠 How It Works
+
+```text
+Do activity → Gain XP → Level Up → Rank Up → Repeat 🔁
+```
+
+---
 
 ## 📂 Project Structure
 
-```
+```bash
 project/
 │
-├── player.py        # Player class and game logic
-├── main.py          # Example usage
+├── player.py        # Core logic
+├── main.py          # Execution
 └── README.md
 ```
 
 ---
 
-## ▶️ Usage;
+## ▶️ Usage
 
-### 1. Create a Player
+### 🧙 Create Player
 
 ```python
 player = Player("Yeager")
 ```
 
-### 2. Gain XP
+---
+
+### ⚡ Gain XP
 
 ```python
-player.gain_xp(120, "Completed Quest")
-player.gain_xp(500, "Defeated Boss")
+player.gain_xp(120, "Completed Workout")
+player.gain_xp(500, "Finished Study Session")
 ```
-
-The system automatically:
-
-* Checks level-ups
-* Updates rank
-* Displays the progress;
 
 ---
 
 ## 📊 Example Output
 
 ```
---- ⚔️ Yeager performed Completed Quest! ---
+--- ⚔️ Yeager performed Completed Workout! ---
 Received 120 XP.
 
 ✨ LEVEL UP! You are now Level 2 (Novice Mage)! ✨
@@ -114,44 +131,39 @@ Level: 2 | Rank: Novice Mage
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Learning Outcomes
 
-This project demonstrates:
-
-* Object-Oriented Programming (OOP)
-* Class design and encapsulation
-* Game progression algorithms
-* Loop-based state management
-* Clean function seperation
+✔ Object-Oriented Programming
+✔ Game System Design
+✔ Algorithmic Thinking
+✔ State Management
 
 ---
 
 ## 🔮 Future Improvements
 
-Possible extensions:
-
-* Save/Load system (JSON)
-* Health and combat mechanics
-* Enemy system
-* Skill tree
-* GUI interface (Tkinter / Pygame)
-* Database integration
+* 💾 Save/Load system
+* ⚔️ Combat system
+* 👾 Enemy AI
+* 🌳 Skill tree
+* 🖥 GUI (Tkinter / Pygame)
+* ☁️ Database integration
 
 ---
 
 ## 🛠 Requirements
 
 * Python 3.x
-* No external libraries required
+* No external libraries
 
 ---
 
-## 📜 License
+## 👨‍💻 Author
 
-This project is open-source and free to use for learning purposes.
+**Akash**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20With-🔥-black?style=for-the-badge"/>
+</p>
 
 ---
-
-## ✨ Author
-
-Created as a learning project to explore programming and game system design using Python.
